@@ -1,22 +1,22 @@
-package com.yago.cardsapp;
+package com.yago.cardsapp.model;
 
 public class DadosPersonagens {
-    private int incone;
+    private int icone;
     private String titulo;
     private String descricao;
 
-    public DadosPersonagens(int incone, String titulo, String descricao) {
-        this.incone = incone;
+    public DadosPersonagens(int icone, String titulo, String descricao) {
+        this.icone = icone;
         this.titulo = titulo;
         this.descricao = descricao;
     }
 
-    public int getIncone() {
-        return incone;
+    public int getIcone() {
+        return icone;
     }
 
-    public void setIncone(int incone) {
-        this.incone = incone;
+    public void setIcone(int icone) {
+        this.icone = icone;
     }
 
     public String getTitulo() {

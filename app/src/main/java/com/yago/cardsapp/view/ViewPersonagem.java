@@ -1,10 +1,11 @@
-package com.yago.cardsapp;
+package com.yago.cardsapp.view;
 
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ViewPersonagem {
-    ImageView icone;
-    TextView titulo, descricao;
+    public static TextView titulo,descricao;
+    public ImageView icone;
+
 
 }
