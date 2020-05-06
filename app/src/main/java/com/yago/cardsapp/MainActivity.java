@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -62,8 +63,15 @@ public class MainActivity extends AppCompatActivity {
                     //recebo o item clicado
                     dadosPersonagens = (DadosPersonagens) adapter.getItem(i);
 
+                Intent intent = new Intent(MainActivity.this, Detalhes.class);
+                intent.putExtra("nome", dadosPersonagens.getTitulo());
+                intent.putExtra("descricao", dadosPersonagens.getDescricao());
+                intent.putExtra("icone", dadosPersonagens.getIcone());
+                startActivity(intent);
+
+
                     //seto no alerta
-                    criaAlerta(dadosPersonagens);
+                    //criaAlerta(dadosPersonagens);
             }
         });
 
